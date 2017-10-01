@@ -1,0 +1,160 @@
+/*!
+ * Start Bootstrap - Landing Page (http://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#aboutus {
+    margin: 3rem;
+    font-weight: 700;
+    font-size: 44px
+}
+
+#aboutStep li {
+    list-style: none;
+    text-align: left;
+}
+
+#dept {
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.thumbnail:hover {
+    box-shadow: 0px 0px 8px 2px #999;
+    transition: box-shadow 0.3s;
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    color: #FFF;
+    padding: 1% 0;
+    font-size: 1.3em;
+    border: 0;
+}
+
+.navbar-brand {
+    float: left;
+    min-height: 50px;
+}
+
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+    color: white;
+    background-color: #222222;
+}
+
+.item {
+    max-height: 650px;
+}
+
+.container {
+    margin: 4% auto;
+}
+
+#aboutusp {
+    padding: 4%;
+    font-size: 1.4em;
+}
+
+footer {
+    width: 100%;
+    background-color: #282828;
+    padding: 2%;
+    color: white;
+}
+
+.copyright {
+    width: 100%;
+    background-color: #1b1b1b;
+    padding: 2%;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.fa:hover {
+    color: #a8c6f4;
+    text-decoration: none;
+}
+
+.init {
+    margin: 4rem;
+}
+
+.imageBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.imageBox img {
+    width: 100%;
+}
+
+.imageBox:hover .textBox {
+    bottom: 0;
+}
+
+.textBox {
+    position: absolute;
+    bottom: -60%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    transition: .5s;
+}
+
+.textBox h2 {
+    color: #fff;
+    margin: 5rem 0;
+}
+
+.textBox p {
+    margin: 0 2rem;
+    color: #ddd;
+    font-weight: 100;
+}
+
+#head5 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:750px) {
+    .imageBox {
+        margin: 2rem 0;
+    }
+}
