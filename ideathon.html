@@ -33,7 +33,7 @@
     h1{
         font-size: 4.3em;
     }
-    @media(max-width: 800px){
+    @media(max-width: 100px){
     .carousel-caption{
         display: none;
     }
@@ -51,14 +51,14 @@
 
 <body>
     <!--navbar starts here -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
 
                 <a class="navbar-brand" href="#">EDC - JSS</a>
             </div>
@@ -67,7 +67,15 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#initiatives">Our Initiatives</a></li>
+                    <li class="dropdown"><!-- this is the code for drop-down menu -->
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ideathon.html">Ideathon</a></li>
+                            <li><a href="esummit.html">E-Summit</a></li>
+                            <li><a href="startupcharcha.html">StartUp Charcha</a></li>
+                        </ul>
+                    </li>
                     <li><a href="team.html">Teams</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
