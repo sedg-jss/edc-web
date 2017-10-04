@@ -20,6 +20,7 @@
 
 <body>
     <!--navbar starts here -->
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -34,7 +35,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <!--this is the collapse bar for navbar -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="">Home</a></li>
+                    <li ><a href="">Home</a></li>
                     <li><a href="#" id="about">About</a></li>
                     <li class="dropdown"><!-- this is the code for drop-down menu -->
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
@@ -197,16 +198,20 @@
 <!-- Scripts to the pages -->
 
 <script type="text/javascript">
+
     $("#about").click(function() {
     $('html, body').animate({
         scrollTop: $("#about2").offset().top - 100
     }, 2000);
 });
+
     $("#departments").click(function() {
     $('html, body').animate({
         scrollTop: $("#departments2").offset().top - 80
     }, 2000);
 });
+
+
 
 </script>
 
