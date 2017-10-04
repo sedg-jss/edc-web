@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <style type="text/css">
+        <style type="text/css">
     .item {
     max-height: 750px;
     background-size: contain;
@@ -33,7 +33,10 @@
     h1{
         font-size: 4.3em;
     }
-    @media(max-width: 100px){
+    #about{
+        display: none;
+    }
+    @media(max-width: 480px){
     .carousel-caption{
         display: none;
     }
@@ -41,10 +44,21 @@
         max-width: 150px;
     }
     h2{
-        font-size: 1.9em;
+        font-size: 1.1em;
+    }
+    hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+    }
+    #about{
+        display:block;
     }
   }
     </style>
+
 </head>
 
 
@@ -120,4 +134,15 @@
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+</div>
+
+<div class="section container-fluid text-center about" id="about">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="aboutus">StratUp Charcha</h1>
+                    <hr>
+                    <p id="aboutDesc">E-Cell, JSSATE Noida assists budding entrepreneurs by lending them a platform to materialise an ‘IDEA’ to a ‘PRODUCT’. Big time, you little wizards personify to successful businessmen upholding entrepreneurship as a career option and set a razzle-dazzle innovative exemplar. JSS E-Cell is a non-profit organisation which will act as a platform for association of likeminded students who would eventually loom as “employment creators” rather than “employment seekers”.</p>
+                    <br>
+                </div>
+            </div>
+</div>

@@ -33,15 +33,21 @@
     h1{
         font-size: 4.3em;
     }
+    #about{
+        display: none;
+    }
     @media(max-width: 480px){
     .carousel-caption{
-        h1:"E-Summit-2017";
+        display: none;
     }
     #icon{
         max-width: 150px;
     }
     h2{
         font-size: 1.9em;
+    }
+    #about{
+        display: block;
     }
   }
     </style>
@@ -66,7 +72,7 @@
                 <!--this is the collapse bar for navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="index.html#about">About</a></li>
                     <li class="dropdown"><!-- this is the code for drop-down menu -->
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
                         <span class="caret"></span></a>
@@ -121,4 +127,15 @@
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+</div>
+
+<div class="section container-fluid text-center about" id="about">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="aboutus">E-Summit</h2>
+                    <hr>
+                    <p id="aboutDesc">E-Cell, JSSATE Noida assists budding entrepreneurs by lending them a platform to materialise an ‘IDEA’ to a ‘PRODUCT’. Big time, you little wizards personify to successful businessmen upholding entrepreneurship as a career option and set a razzle-dazzle innovative exemplar. JSS E-Cell is a non-profit organisation which will act as a platform for association of likeminded students who would eventually loom as “employment creators” rather than “employment seekers”.</p>
+                    <br>
+                </div>
+            </div>
+</div>

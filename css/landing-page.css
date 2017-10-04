@@ -84,7 +84,7 @@ p.copyright {
 }
 
 .item {
-    max-height: 650px;
+    max-height: 750px;
 }
 
 .container {
@@ -168,5 +168,15 @@ footer {
     .imageBox {
         margin: 2rem 0;
     }
-
+    #about{
+        display:block;
+    }
+     hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+    }
+}
 }
