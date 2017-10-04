@@ -35,7 +35,7 @@
                 <!--this is the collapse bar for navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#" id="about">About</a></li>
                     <li class="dropdown"><!-- this is the code for drop-down menu -->
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
                         <span class="caret"></span></a>
@@ -45,7 +45,7 @@
                             <li><a href="startupcharcha.html">StartUp Charcha</a></li>
                         </ul>
                     </li>
-                    <li><a href="team.html">Teams</a></li>
+                    <li><a href="#" id="departments">Teams</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
@@ -83,8 +83,7 @@
         </div>
         <!-- image carousel ensds here -->
         <!-- About Us element -->
-        <a name='about'></a>
-        <div class="section container-fluid text-center about">
+        <div class="section container-fluid text-center about"  id="about2">
             <div class="row">
                 <div class="col-md-12">
                     <h2 id="aboutus">About Us</h2>
@@ -114,7 +113,7 @@
         <!-- About Us elements end -->
         <!-- Department -->
         <a name='teams'></a>
-        <div class="section container-fluid text-center" style="background-color:#eaebec">
+        <div class="section container-fluid text-center" style="background-color:#eaebec" id="departments2">
             <br>
             <div class="row">
                 <h2 id="dept">Departments</h2>
@@ -194,6 +193,24 @@
             </div>
         </div>
     </div>
+
+<!-- Scripts to the pages -->
+
+<script type="text/javascript">
+    $("#about").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about2").offset().top - 100
+    }, 2000);
+});
+    $("#departments").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#departments2").offset().top - 80
+    }, 2000);
+});
+
+</script>
+
+
 </body>
 
 
