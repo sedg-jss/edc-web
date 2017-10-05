@@ -138,7 +138,7 @@
                 <!--this is the collapse bar for navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="#" id="abouti">About Ideathon</a></li>
                     <li class="dropdown"><!-- this is the code for drop-down menu -->
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
                         <span class="caret"></span></a>
@@ -148,7 +148,6 @@
                             <li><a href="startupcharcha.html">StartUp Charcha</a></li>
                         </ul>
                     </li>
-                    <li><a href="team.html">Teams</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
@@ -177,34 +176,26 @@
                 <!-- End Active -->
             </div>
         </div>
-
-
 <div class="section container-fluid text-center about" style="background-color: #edeeef;" id="divrule">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 id="aboutus" id="rules">Prizes</h2>
-                    <hr>
-                </div>
-                    <div class="row">
-                    <div class="col-md-5 col-md-offset-1" id="aboutpic">
-                        <img src="media/jssstep.gif" class="img-responsive" style="transform: translateX(20%);" id="stepimage">
-                    </div>
-                    <div class="col-md-5" id="aboutdesc">
-                        <ul id="aboutStep">
-                            <li id="li2"><img src="media/step.png"> &nbsp; Recommendation of Top 10 teams to various entrepreneurial workshop that JSS STEP .</li>
-                            <li id="li2"><img src="media/step.png"> &nbsp; Pre Incubation to top 5 finalist by JSS - Step .
-                            </li>
-                            <li id="li2"><img src="media/step.png"> &nbsp; Cash Prizes to top 3 teams sponsored by JSS Step.
-                            </li>
-                            <li id="li2"><img src="media/step.png"> &nbsp; Direct entry into VC Mentorship round in B-Plan competition in "The Entrepreneurship Summit - 2018" .
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<div class="container text-center" id="therounds" >
+    <h2 id="aboutus">About Ideathon</h2>
+    <hr>
 </div>
 
-<div class="container text-center">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <p>Ideathon - is one of the most prominent and widespread conducted by the Entrepreneurship development cell of JSS Noida . The goal of the event is to identify ideas within college which has potential of developing into a full fledged startups few year later.</p>
+            <p>With this event , we are not only trying to identify ideas but students who have knack of doing out of the box thing and make them into future leaders.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="media/round1.png" class="img-responsive"></img>
+        </div>  
+    </div>
+</div>
+</div>
+
+<div class="container text-center" id="therounds">
     <h2 id="aboutus">The Rounds</h2>
     <hr>
 </div>
@@ -243,7 +234,30 @@
     </div>
 </div>
 
-
+<div class="section container-fluid text-center about" style="background-color: #edeeef;" id="divrule">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="aboutus" id="rules">Prizes</h2>
+                    <hr>
+                </div>
+                    <div class="row">
+                    <div class="col-md-5 col-md-offset-1" id="aboutpic">
+                        <img src="media/jssstep.gif" class="img-responsive" style="transform: translateX(20%);" id="stepimage">
+                    </div>
+                    <div class="col-md-5" id="aboutdesc">
+                        <ul id="aboutStep">
+                            <li id="li2"><img src="media/step.png"> &nbsp; Recommendation of Top 10 teams to various entrepreneurial workshop that JSS STEP .</li>
+                            <li id="li2"><img src="media/step.png"> &nbsp; Pre Incubation to top 5 finalist by JSS - Step .
+                            </li>
+                            <li id="li2"><img src="media/step.png"> &nbsp; Cash Prizes to top 3 teams sponsored by JSS Step.
+                            </li>
+                            <li id="li2"><img src="media/step.png"> &nbsp; Direct entry into VC Mentorship round in B-Plan competition in "The Entrepreneurship Summit - 2018" .
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+</div>
 
 <div class="copyright container-fluid text-center">
     <div class="row">
@@ -257,6 +271,11 @@
     $("#button-caro").click(function() {
     $('html, body').animate({
         scrollTop: $("#aboutStep").offset().top - 200
+    }, 2000);
+});
+    $("#abouti").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#therounds").offset().top - 100
     }, 2000);
 });
 </script>
