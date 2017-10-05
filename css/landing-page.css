@@ -82,6 +82,10 @@ p.copyright {
     color: white;
     background-color: #222222;
 }
+#li1{
+    margin: 20px 0;
+    text-align: center;
+  }
 
 .item {
     max-height: 750px;
