@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>EDC - JSS , Noida</title>
     <meta charset="utf-8">
-	<meta name="google-site-verification" content="kDAkYS1IB88LyQNvMiZiZ7cDT880X2uJFRkWOSwFg-8" />
+    <meta name="google-site-verification" content="kDAkYS1IB88LyQNvMiZiZ7cDT880X2uJFRkWOSwFg-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,18 +16,24 @@
     <link rel="stylesheet" type="text/css" href="css/landing-page.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <script src="js/fakeLoader.min.js"></script>
+
+
+
 </head>
 
 <style type="text/css">
-    @media(max-width: 480px){
-    #indexdiv{
-        display: none;
-    }
+        @media(max-width: 480px) {
+        #indexdiv {
+            display: none;
+        }
+
 </style>
 
 <body>
     <!--navbar starts here -->
-
+    <div id="fakeloader"></div>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -41,10 +48,11 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <!--this is the collapse bar for navbar -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li ><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href="#" id="about">About</a></li>
-                    <li class="dropdown"><!-- this is the code for drop-down menu -->
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
+                    <li class="dropdown">
+                        <!-- this is the code for drop-down menu -->
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
                         <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="ideathon.html">Ideathon</a></li>
@@ -80,7 +88,7 @@
                 <div class="item">
                     <img src="media/homec2.jpg">
                 </div>
-                <div class="item">  
+                <div class="item">
                     <img src="media/homec3.jpg">
                 </div>
             </div>
@@ -95,7 +103,7 @@
         </div>
         <!-- image carousel ensds here -->
         <!-- About Us element -->
-        <div class="section container-fluid text-center about"  id="about2">
+        <div class="section container-fluid text-center about" id="about2">
             <div class="row">
                 <div class="col-md-12">
                     <h2 id="aboutus">About Us</h2>
@@ -206,24 +214,29 @@
         </div>
     </div>
 
-<!-- Scripts to the pages -->
+    <!-- Scripts to the pages -->
 
-<script type="text/javascript">
+    <script type="text/javascript">
+        $("#about").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#about2").offset().top - 100
+            }, 2000);
+        });
 
-    $("#about").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#about2").offset().top - 100
-    }, 2000);
+        $("#departments").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#departments2").offset().top - 80
+            }, 2000);
+        });
+
+    </script>
+    <script type="text/javascript">
+$("#fakeloader").fakeLoader({
+timeToHide:1200, //Time in milliseconds for fakeLoader disappear
+zIndex:"999",//Default zIndex
+spinner:"spinner5",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+bgColor:"#222222" //Hex, RGB or RGBA colors//If you want can you insert your custom image
 });
-
-    $("#departments").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#departments2").offset().top - 80
-    }, 2000);
-});
-
-
-
 </script>
 
 
