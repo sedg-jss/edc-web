@@ -16,12 +16,134 @@
     <link rel="stylesheet" type="text/css" href="css/landing-page.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <script src="js/fakeLoader.min.js"></script>
 
     <style type="text/css">
     .item {
-    max-height: 750px;
-    background-size: contain;
+            max-height: 750px;
+            background-size: contain;
+        }
+        
+        .carousel-caption {
+            top: 45%;
+            transform: translateY(-30%);
+        }
+        
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 1em 0;
+            padding: 0;
+        }
+        
+        p {
+            font-size: 1.3em;
+        }
+        
+        h1 {
+            font-size: 4.3em;
+            color: #ffffff;
+        }
+        
+        #about {
+            display: none;
+        }
+        
+        #divrule {
+            padding-bottom: 20px;
+        }
+        
+        #social-links {
+            top: 85%;
+            transform: translateY(-10%);
+            transform: translateX(0%);
+        }
+        
+        #demo {
+            font-size: 3.3em;
+            color: #ffffff;
+        }
+        
+        .btn {
+            color: white;
+            padding: 12px 22px;
+            background-color: #5e4485;
+            border: 10px;
+            top: 40px;
+            font-size: 1.4em;
+        }
+        
+        #button-caro {
+            transform: translateY(110%);
+        }
+        
+        #button-caro2 {
+            transform: translateY(110%);
+        }
+        
+        #divrule {
+            padding-bottom: 70px;
+        }
+        
+        #li2 {
+            margin: 20px 0;
+            font-size: 1.3em;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        #collabtext {
+            display: none;
+        }
+        
+        @media(max-width: 480px) {
+            #headidea {
+                display: none;
+            }
+            #headhr {
+                display: none;
+            }
+            #collabtext {
+                display: block;
+                transform: translateX(5%);
+            }
+            #demo {
+                display: none;
+            }
+            #button-caro {
+                display: none;
+            }
+            #button-caro2 {
+                transform: translateY(-1%);
+                transform: translateX(-19%);
+                background-color: #000000;
+            }
+            #stepcollab {
+                display: block;
+            }
+            #stepimage {
+                transform: translateX(0%);
+            }
+        }
+        
+        #icon {
+            max-width: 150px;
+        }
+        
+        h2 {
+            font-size: 1.9em;
+        }
+        
+        #about {
+            display: none;
+        }
     }
+<<<<<<< HEAD
+
+=======
     .carousel-caption{
     top: 45%;
     transform: translateY(-30%);
@@ -132,14 +254,16 @@
         display: none;
     }
   }
+>>>>>>> 8983840886b4929d927322e378d1eb8d7c38f37f
     </style>
 </head>
 
 
 
 <body>
+    <div id="fakeloader"></div>
     <!--navbar starts here -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -148,15 +272,16 @@
                     <span class="icon-bar"></span>
                     </button>
 
-                <a class="navbar-brand" href="#">EDC - JSS</a>
+                <a class="navbar-brand" href="#"><img src="media/logo.png" id="navlogo" class="img-responsive"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <!--this is the collapse bar for navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="#" id="abouti">About Ideathon</a></li>
-                    <li class="dropdown"><!-- this is the code for drop-down menu -->
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
+                    <li class="dropdown">
+                        <!-- this is the code for drop-down menu -->
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
                         <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="ideathon.html">Ideathon</a></li>
@@ -168,6 +293,18 @@
             </div>
         </div>
     </nav>
+<<<<<<< HEAD
+    <div id="carousel" class="section carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="media/idethon.jpeg">
+                <div class="carousel-caption">
+                    <h1 id="headidea">Ideathon 2017 is live !</h1>
+                    <hr id="headhr">
+                    <h3 id="headidea">In collabration with <img src="media/steplogo.ico"> JSS - STEP</h3>
+                    <hr id="headhr">
+                    <br>
+=======
 <div id="carousel" class="section carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
@@ -179,20 +316,26 @@
                         </img> </h4>
                         <hr id="headhr">
                         <br>
+>>>>>>> 8983840886b4929d927322e378d1eb8d7c38f37f
 
-                        <p id="demo"></p>
-                        <button  class="btn btn-default" id="button-caro">Prizes</button>
-                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                        <button type="submit" class="btn btn-default" id="button-caro2"><a style="color: white" href="https://goo.gl/forms/hYVlLPrxA8gvlU4K3">Register</a></button>
-                        <!--<div class="carousel-caption" id="social-links">
+                    <p id="demo"></p>
+                    <button class="btn btn-default" id="button-caro">Prizes</button> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    <button type="submit" class="btn btn-default" id="button-caro2"><a style="color: white" href="https://goo.gl/forms/hYVlLPrxA8gvlU4K3">Register</a></button>
+                    <!--<div class="carousel-caption" id="social-links">
                             <a href="#" class="fa fa-facebook"></a>
                             <a href="#" class="fa fa-twitter"></a>
                             <a href="#" class="fa fa-youtube"></a>
                         </div>-->
+<<<<<<< HEAD
+                    <h4 id="collabtext">In collabration with <img src="media/steplogo.ico"> JSS - STEP</h4>
+=======
                     </div>
+>>>>>>> 8983840886b4929d927322e378d1eb8d7c38f37f
                 </div>
-                <!-- End Active -->
             </div>
+<<<<<<< HEAD
+            <!-- End Active -->
+=======
         </div>
 <div id="collabdiv" class="section container-fluid text-center about" style="background-color: #d8d8d8">
     <div class="container text-center">
@@ -219,142 +362,169 @@
     <div class="row">
         <div class="col-md-12" >
             <img class="img-responsive" src="media/edc-idea.jpg">
+>>>>>>> 8983840886b4929d927322e378d1eb8d7c38f37f
         </div>
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <img src="media/ideathon.jpg" class="img-responsive"></img>
-        </div>
-        <div class="col-md-6">
-            <p>Ideathon - is one of the most prominent and widespread conducted by the Entrepreneurship development cell of JSS Noida . The goal of the event is to identify ideas within college which has potential of developing into a full fledged startups few year later.</p>
-            <p>With this event , we are not only trying to identify ideas but students who have knack of doing out of the box thing and make them into future leaders.</p>
+    <div class="section container-fluid text-center about" style="display: none;">
+        <div class="container text-center">
+            <h2 id="">In collabration with <img src="media/steplogo.ico"> JSS STEP</h2>
         </div>
     </div>
-</div>
-</div>
-<div class="container text-center" id="therounds">
-    <h2 id="aboutus">The Rounds</h2>
-    <hr>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <h4><b>Abstract Submission Round 1</b></h4>
+    <div class="section container-fluid text-center about" style="background-color: #edeeef;" id="divrule">
+        <div class="container text-center" id="therounds">
+            <h2 id="aboutus">Ideathon 2017</h2>
             <hr>
-            <p>This is the first round of Ideathon . In this round teams are required an idea , which may be at any stage even at scratch .  </p>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <img src="media/round1.png" class="img-responsive"></img>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <h4><b>Abstract Pitching Round 2</b></h4>
-            <hr>
-            <p>In this round the teams those are selected from the abstraction ideas will require to pitch their ideas in front of judges and audiences . This basically will be an elevator pitch. </p>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <img src="media/round2.png" class="img-responsive"></img>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <h4><b>Pre-Finals Round 3</b></h4>
-            <hr>
-            <p>40 selected teams now will be given mentorship before this round and all required help in order to make their pitches more strong . From this 15 teams will be choosen for finals.</p>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <img src="media/idea.jpg" class="img-responsive"></img>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <h4><b>The Finals</b></h4>
-            <hr>
-            <p>15 teams which are choosen for the final round , will compete for the top spot . They will be provided mentorhship and training by EDC members.</p>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <img src="media/round3.png" class="img-responsive"></img>
-        </div>
-    </div>
-</div>
-
-<div class="section container-fluid text-center about" style="background-color: #edeeef;" id="divrule">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 id="aboutus" id="rules">Prizes</h2>
-                    <hr>
-                </div>
-                    <div class="row">
-                    <div class="col-md-5 col-md-offset-1" id="aboutpic">
-                        <img src="media/jssstep.gif" class="img-responsive" style="transform: translateX(20%);" id="stepimage">
-                    </div>
-                    <div class="col-md-5" id="aboutdesc">
-                        <ul id="aboutStep">
-                            <li id="li2"><img src="media/step.png"> &nbsp; Recommendation of Top 10 teams to various entrepreneurial workshop that JSS STEP will conduct in 2017-2018.</li>
-                            <li id="li2"><img src="media/step.png"> &nbsp; Pre Incubation to top 5 finalist by JSS - Step .
-                            </li>
-                            <li id="li2"><img src="media/step.png"> &nbsp; Cash Prizes to top 3 teams sponsored by JSS Step.
-                            </li>
-                            <li id="li2"><img src="media/step.png"> &nbsp; Direct entry into VC Mentorship round in B-Plan competition in "The Entrepreneurship Summit - 2018" .
-                            </li>
-                        </ul>
-                    </div>
+                    <img class="img-responsive" src="media/edc-idea.jpg">
                 </div>
             </div>
-</div>
-
-
-<div class="copyright container-fluid text-center">
-    <div class="row">
-        <div class="col-md-12">
-            <p>&copy; 2017 All Rights Reserved | Handcrafted with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by EDC</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="media/ideathon.jpg" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <p>Ideathon - is one of the most prominent and widespread conducted by the Entrepreneurship development cell of JSS Noida . The goal of the event is to identify ideas within college which has potential of developing into a full fledged startups few year later.</p>
+                    <p>With this event , we are not only trying to identify ideas but students who have knack of doing out of the box thing and make them into future leaders.</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    <div class="container text-center" id="therounds">
+        <h2 id="aboutus">The Rounds</h2>
+        <hr>
+    </div>
 
-<script type="text/javascript">
-    $("#button-caro").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#aboutStep").offset().top - 200
-    }, 2000);
-});
-    $("#abouti").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#therounds").offset().top - 100
-    }, 2000);
-});
-</script>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Oct 9, 2017 23:59:59 ").getTime();
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4><b>Abstract Submission Round 1</b></h4>
+                <hr>
+                <p>This is the first round of Ideathon . In this round teams are required an idea , which may be at any stage even at scratch . </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <img src="media/round1.png" class="img-responsive">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4><b>Abstract Pitching Round 2</b></h4>
+                <hr>
+                <p>In this round the teams those are selected from the abstraction ideas will require to pitch their ideas in front of judges and audiences . This basically will be an elevator pitch. </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <img src="media/round2.png" class="img-responsive">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4><b>Pre-Finals Round 3</b></h4>
+                <hr>
+                <p>40 selected teams now will be given mentorship before this round and all required help in order to make their pitches more strong . From this 15 teams will be choosen for finals.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <img src="media/idea.jpg" class="img-responsive">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h4><b>The Finals</b></h4>
+                <hr>
+                <p>15 teams which are choosen for the final round , will compete for the top spot . They will be provided mentorhship and training by EDC members.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <img src="media/round3.png" class="img-responsive">
+            </div>
+        </div>
+    </div>
+
+    <div class="section container-fluid text-center about" style="background-color: #edeeef;" id="divrule">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 id="aboutus" id="rules">Prizes</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1" id="aboutpic">
+                    <img src="media/jssstep.gif" class="img-responsive" style="transform: translateX(20%);" id="stepimage">
+                </div>
+                <div class="col-md-5" id="aboutdesc">
+                    <ul id="aboutStep">
+                        <li id="li2"><img src="media/step.png"> &nbsp; Recommendation of Top 10 teams to various entrepreneurial workshop that JSS STEP will conduct in 2017-2018.</li>
+                        <li id="li2"><img src="media/step.png"> &nbsp; Pre Incubation to top 5 finalist by JSS - Step .
+                        </li>
+                        <li id="li2"><img src="media/step.png"> &nbsp; Cash Prizes to top 3 teams sponsored by JSS Step.
+                        </li>
+                        <li id="li2"><img src="media/step.png"> &nbsp; Direct entry into VC Mentorship round in B-Plan competition in "The Entrepreneurship Summit - 2018" .
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+    <div class="copyright container-fluid text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&copy; 2017 All Rights Reserved | Handcrafted with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by EDC</p>
+            </div>
+        </div>
+    </div>
 
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-</script>
+    <script type="text/javascript">
+        $("#button-caro").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#aboutStep").offset().top - 200
+            }, 2000);
+        });
+        $("#abouti").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#therounds").offset().top - 100
+            }, 2000);
+        });
 
+    </script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 9, 2017 23:59:59 ").getTime();
+
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+    </script>
+    <script type="text/javascript">
+        $("#fakeloader").fakeLoader({
+            timeToHide: 1200,
+            zIndex: "999",
+            spinner: "spinner5",
+            bgColor: "#222222"
+        });
+
+    </script>

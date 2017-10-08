@@ -3,6 +3,7 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
+
 body,
 html {
     width: 100%;
@@ -11,16 +12,19 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: #fff; }
+    border-radius: 10px;
+    background-color: #fff;
+}
 
 ::-webkit-scrollbar {
-  width: 5px;
-  background-color: #fff; }
+    width: 5px;
+    background-color: #fff;
+}
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #222 }
+    border-radius: 10px;
+    background-color: #222
+}
 
 body,
 h1,
@@ -30,6 +34,12 @@ h4,
 h5,
 h6 {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#navlogo {
+    position: absolute;
+    top: 10px;
+    left: 30px;
 }
 
 #aboutus {
@@ -82,10 +92,11 @@ p.copyright {
     color: white;
     background-color: #222222;
 }
-#li1{
+
+#li1 {
     margin: 20px 0;
     text-align: center;
-  }
+}
 
 .item {
     max-height: 750px;
@@ -168,19 +179,61 @@ footer {
     font-weight: 700;
 }
 
+@media only screen and (max-width:768px) {
+    #navlogo {
+        width: 100px !important;
+    }
+}
+
+@media only screen and (max-width:1024px) and (min-width:769px) {
+    #navlogo {
+        width: 150px !important;
+    }
+}
+
+#navlogo {
+    width: 150px;
+}
+
 @media only screen and (max-width:750px) {
     .imageBox {
         margin: 2rem 0;
     }
-    #about{
-        display:block;
+    #about {
+        display: block;
     }
-     hr {
-    border: none;
-    height: 1px;
-    /* Set the hr color */
-    color: #333; /* old IE */
-    background-color: #333; /* Modern Browsers */
+    hr {
+        border: none;
+        height: 1px;
+        /* Set the hr color */
+        color: #333;
+        /* old IE */
+        background-color: #333;
+        /* Modern Browsers */
+    }
+    #navlogo {
+        width: 100;
     }
 }
+
+footer {
+    overflow-y: hidden;
+}
+
+footer .fa {
+    color: #777;
+}
+
+footer .fa:hover {
+    color: #fff;
+}
+
+footer .fa:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.copyright {
+    height: 80px;
+    overflow: hidden;
 }

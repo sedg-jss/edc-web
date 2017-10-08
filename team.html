@@ -1,394 +1,399 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>EDC - JSS , Noida</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!-- jquery -->
-		<!-- all things are linked over the net , no local folder for js -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="css/animate.css">
-		<script src="js/jquery-sectionsnap.js" type="text/javascript"></script>
-		<style>
-		.navbar{
-			margin-bottom: 0;
-			border-radius: 0;
-			color: #FFF;
-			padding: 1% 0;
-			font-size: 1.3em;
-			border: 0;
-		}
-		.navbar-brand{
-			float: left;
-			min-height: 50px;
-		}
-		.navbar-inverse .navbar-nav .active a,  .navbar-inverse .navbar-nav .active a:focus,  .navbar-inverse .navbar-nav .active a:hover{
-		color: white;
-		background-color: #222222;
-		}
-		.carousel-caption{
-			top: 50%;
-			color: white;
-			transform: translateY(-70%);
-			text-transform: uppercase;
-		}
-		.container{
-			margin: 4% auto;
-		}
-		footer{
-			width:100%;
-			background-color: #282828;
-			padding: 2%;
-			color: white;
-		}
-		.copyright{
-			width:100%;
-			background-color: #1b1b1b;
-			padding: 2%;
-			color: white;
-		}
-		.foot_fa{
-			padding: 20px;
-			font-size: 30px;
-			color: white;
-		}
-		.foot_fa:hover{
-			color: #a8c6f4;
-			text-decoration: none;
-		}
-		@font-face { font-family: headFont; src: url('font/font1.otf'); }
-		h2{
-			font-size: 44px;
-			font-family: headFont, sans-serif;
-		}
-.circle {
-  display: block;
-  width: 200px;
-  height: 200px;
-  margin: 1em auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-border-radius: 99em;
-  -moz-border-radius: 99em;
-  border-radius: 99em;
-  border: 5px solid #eee;
-  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
-}
-		</style>
-	</head>
-	<body>
-		<!--navbar starts here -->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+<head>
+    <title>EDC - JSS , Noida</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jquery -->
+    <!-- all things are linked over the net , no local folder for js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery-sectionsnap.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <script src="js/fakeLoader.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/landing-page.css">
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            color: #FFF;
+            padding: 1% 0;
+            font-size: 1.3em;
+            border: 0;
+        }
+        
+        .navbar-brand {
+            float: left;
+            min-height: 50px;
+        }
+        
+        .navbar-inverse .navbar-nav .active a,
+        .navbar-inverse .navbar-nav .active a:focus,
+        .navbar-inverse .navbar-nav .active a:hover {
+            color: white;
+            background-color: #222222;
+        }
+        
+        .carousel-caption {
+            top: 50%;
+            color: white;
+            transform: translateY(-70%);
+            text-transform: uppercase;
+        }
+        
+        .container {
+            margin: 4% auto;
+        }
+        
+        footer {
+            width: 100%;
+            background-color: #282828;
+            padding: 2%;
+            color: white;
+        }
+        
+        .copyright {
+            width: 100%;
+            background-color: #1b1b1b;
+            padding: 2%;
+            color: white;
+        }
+        
+        center .fa {
+            padding: 10px;
+            font-size: 20px;
+            color: #777;
+        }
+        
+        center .fa:hover {
+            color: #a8c6f4;
+            text-decoration: none;
+        }
+        
+        @font-face {
+            font-family: headFont;
+            src: url('font/font1.otf');
+        }
+        
+        h2 {
+            font-size: 44px;
+            font-family: headFont, sans-serif;
+        }
+        
+        .circle {
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: 1em auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-border-radius: 99em;
+            -moz-border-radius: 99em;
+            border-radius: 99em;
+            border: 5px solid #eee;
+            box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="fakeloader"></div>
+    <!--navbar starts here -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">EDC - JSS</a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar"> <!--this is the collapse bar for navbar -->
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="index.html#about">About</a></li>
-					<li class="dropdown"><!-- this is the code for drop-down menu -->
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
+                <a class="navbar-brand" href="#"><img src="media/logo.png" id="navlogo" class="img-responsive"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <!--this is the collapse bar for navbar -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li class="dropdown">
+                        <!-- this is the code for drop-down menu -->
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
 						<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="index.html#initiatives">Ideathon</a></li>
-							<li><a href="index.html#initiatives">E-Summit</a></li>
-							<li><a href="index.html#initiatives">StartUp Charcha</a></li>
-						</ul>
-					</li>
-					<li><a href="">Teams</a></li>
-					<li><a href="#contact">Contact Us</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- navbar ends here -->
-	<div class="main">
-			<!-- About Us element -->
-			<div class="section container text-center">
-				<div class="row">
-					<div class="col-md-12">
-						<br>
-						<h2>Our Team</h2>
-						<hr>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/1.jpg" class="img-responsive circle">
-							<b>Rishabh sharma</b>
-							<br>
-							<a href="https://www.facebook.com/rishabh10176" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/rishabh-sharma-3627a6108" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/2.jpg" class="img-responsive circle">
-							<b>Ankur</b>
-							<br>
-							<a href="#" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="#" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/3.jpg" class="img-responsive circle">
-							<b>Mohit</b>
-							<br>
-							<a href="#" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="#" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/4.jpg" class="img-responsive circle">
-							<b>Divyansh Gandhi</b>
-							<br>
-							<a href="#" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="#" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/5.jpg" class="img-responsive circle">
-							<b>Mudit</b>
-							<br>
-							<a href="#" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="#" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/6.jpg" class="img-responsive circle">
-							<b>Avisha</b>
-							<br>
-							<a href="#" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="#" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/7.jpg" class="img-responsive circle">
-							<b>Sansriti</b>
-							<br>
-							<a href="#" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="#" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/8.jpg" class="img-responsive circle">
-							<b>Harsh</b>
-							<br>
-							<a href="#" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="#" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/Abhishek.jpg" class="img-responsive circle">
-							<b>Abhishek Agrawal</b>
-							<br>
-							<a href="https://www.facebook.com/abhishek.agrawal0297" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/abhishek-agrawal-a3283b129/" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/Adesh.JPG" class="img-responsive circle">
-							<b>Adesh Kumar</b>
-							<br>
-							<a href="https://www.facebook.com/adesh.kumar.944" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/adesh-k-48883310a/" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/Akanksha.jpg" class="img-responsive circle">
-							<b>Akanksha Agarwal </b>
-							<br>
-							<a href="https://www.facebook.com/akanksha.agarwal.925602" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/akanksha-agarwal-56b845129" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/anantjain.jpg" class="img-responsive circle">
-							<b>Anant Jain</b>
-							<br>
-							<a href="https://fb.com/anantjain60" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/anantjain60" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/ayush.JPG" class="img-responsive circle">
-							<b>Ayush Srivastava</b>
-							<br>
-							<a href="https://www.facebook.com/ayush.srivastava19" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/srivastavs61/" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/ayushi.jpg" class="img-responsive circle">
-							<b>Ayushi Kapoor</b>
-							<br>
-							<a href="https://facebook.com/ayushiayushi224?refid=8" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/ayushi-kapoor-119ab2129" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/kp.jpeg" class="img-responsive circle">
-							<b>KP Kushal</b>
-							<br>
-							<a href="https://www.facebook.com/kp.kushal/" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/kp-kushal-078628125" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/Naman.jpg" class="img-responsive circle">
-							<b>Naman Jain</b>
-							<br>
-							<a href="https://www.facebook.com/namanjain16" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/naman-jain/" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/Nandni.jpg" class="img-responsive circle">
-							<b>Nandni Jain</b>
-							<br>
-							<a href="https://in.linkedin.com/in/nandni-jain-b55846129" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/Nishith.jpeg" class="img-responsive circle">
-							<b>Nishith Jaiswal</b>
-							<br>
-							<a href="https://www.facebook.com/nishith.jaiswal01#" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/nishith01/" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/raaj.jpg" class="img-responsive circle">
-							<b>Raj Gubrele</b>
-							<br>
-							<a href="https://m.facebook.com/raaj.gubrele#" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/mwlite/me" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/sarthak.jpg" class="img-responsive circle">
-							<b>Sarthak Vashistha </b>
-							<br>
-							<a href="https://m.facebook.com/sarthak.vashistha" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/sarthak-vashistha-367b6453" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/saurabh.jpg" class="img-responsive circle">
-							<b>saurabh ranjan</b>
-							<br>
-							<a href="https://www.facebook.com/saurabhranjan1806" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/m-waris-653ba028/" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/shivani.jpg" class="img-responsive circle">
-							<b>Shivani Tekriwal</b>
-							<br>
-							<a href="https://www.facebook.com/shivani.tekriwal" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/shivani-tekriwal-6a2a2b122/" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/shlok.jpg" class="img-responsive circle">
-							<b>Shlok Srivastava</b>
-							<br>
-							<a href="https://www.facebook.com/shlok.srivastava" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/shlok-srivastava-86654010a/" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-					<div class="col-md-3">
-						<center>
-							<img src="team/waris.jpg" class="img-responsive circle">
-							<b>M Waris</b>
-							<br>
-							<a href="https://www.facebook.com/mw.waris1" class="fa fa-facebook"></a>
-							&nbsp; 
-							<a href="https://www.linkedin.com/in/m-waris-653ba028/" class="fa fa-linkedin"></a>
-						</center>
-					</div>
-				</div>
-			</div>
-			<!-- About Us elements end -->
-			<!-- added maps above the footer -->
-			<div>
-				<iframe width="100%" height="450" frameborder="0" style="border:0px; allowfullscreen;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJf1Y03EHlDDkRGWvWI8sn0E8&key=AIzaSyC1_A4z58bawhQ24tFAbhKFNoouQVWfRqk"></iframe>
-			</div>
-			<a name="contact"></a>
-			<footer class="container-fluid text-center">
-				<div class="row">
-					<div class="col-md-6">
-						<h2>Stay in touch !</h2>
-						<br>
-					</div>
-					<div class="col-md-6">
-						<a href="#" class="foot_fa fa fa-facebook"></a>
-						<a href="#" class="foot_fa fa fa-twitter"></a>
-						<a href="#" class="foot_fa fa fa-google"></a>
-						<a href="#" class="foot_fa fa fa-linkedin"></a>
-						<a href="#" class="foot_fa fa fa-youtube"></a>
-					</div>
-				</div>
-				
-			</footer>
-			<div class="copyright container-fluid text-center">
-				<div class="row">
-					<div class="col-md-12">
-						<p>&copy; 2017 All Rights Reserved | Handcrafted with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by EDC</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#initiatives">Ideathon</a></li>
+                            <li><a href="index.html#initiatives">E-Summit</a></li>
+                            <li><a href="index.html#initiatives">StartUp Charcha</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="">Team</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+    <div class="main">
+        <!-- About Us element -->
+        <div class="section container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <h2>Our Team</h2>
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/1.jpg" class="img-responsive circle">
+                        <b>Rishabh sharma</b>
+                        <br>
+                        <a href="https://www.facebook.com/rishabh10176" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/rishabh-sharma-3627a6108" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/2.jpg" class="img-responsive circle">
+                        <b>Ankur</b>
+                        <br>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/3.jpg" class="img-responsive circle">
+                        <b>Mohit</b>
+                        <br>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/4.jpg" class="img-responsive circle">
+                        <b>Divyansh Gandhi</b>
+                        <br>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/5.jpg" class="img-responsive circle">
+                        <b>Mudit</b>
+                        <br>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/6.jpg" class="img-responsive circle">
+                        <b>Avisha</b>
+                        <br>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/7.jpg" class="img-responsive circle">
+                        <b>Sansriti</b>
+                        <br>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/8.jpg" class="img-responsive circle">
+                        <b>Harsh</b>
+                        <br>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/Abhishek.jpg" class="img-responsive circle">
+                        <b>Abhishek Agrawal</b>
+                        <br>
+                        <a href="https://www.facebook.com/abhishek.agrawal0297" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/abhishek-agrawal-a3283b129/" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/Adesh.JPG" class="img-responsive circle">
+                        <b>Adesh Kumar</b>
+                        <br>
+                        <a href="https://www.facebook.com/adesh.kumar.944" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/adesh-k-48883310a/" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/Akanksha.jpg" class="img-responsive circle">
+                        <b>Akanksha Agarwal </b>
+                        <br>
+                        <a href="https://www.facebook.com/akanksha.agarwal.925602" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/akanksha-agarwal-56b845129" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/anantjain.jpg" class="img-responsive circle">
+                        <b>Anant Jain</b>
+                        <br>
+                        <a href="https://fb.com/anantjain60" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/anantjain60" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/ayush.JPG" class="img-responsive circle">
+                        <b>Ayush Srivastava</b>
+                        <br>
+                        <a href="https://www.facebook.com/ayush.srivastava19" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/srivastavs61/" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/ayushi.jpg" class="img-responsive circle">
+                        <b>Ayushi Kapoor</b>
+                        <br>
+                        <a href="https://facebook.com/ayushiayushi224?refid=8" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/ayushi-kapoor-119ab2129" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/kp.jpeg" class="img-responsive circle">
+                        <b>KP Kushal</b>
+                        <br>
+                        <a href="https://www.facebook.com/kp.kushal/" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/kp-kushal-078628125" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/Naman.jpg" class="img-responsive circle">
+                        <b>Naman Jain</b>
+                        <br>
+                        <a href="https://www.facebook.com/namanjain16" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/naman-jain/" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/Nandni.jpg" class="img-responsive circle">
+                        <b>Nandni Jain</b>
+                        <br>
+                        <a href="https://in.linkedin.com/in/nandni-jain-b55846129" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/Nishith.jpeg" class="img-responsive circle">
+                        <b>Nishith Jaiswal</b>
+                        <br>
+                        <a href="https://www.facebook.com/nishith.jaiswal01#" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/nishith01/" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/raaj.jpg" class="img-responsive circle">
+                        <b>Raj Gubrele</b>
+                        <br>
+                        <a href="https://m.facebook.com/raaj.gubrele#" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/mwlite/me" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/sarthak.jpg" class="img-responsive circle">
+                        <b>Sarthak Vashistha </b>
+                        <br>
+                        <a href="https://m.facebook.com/sarthak.vashistha" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/sarthak-vashistha-367b6453" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/saurabh.jpg" class="img-responsive circle">
+                        <b>saurabh ranjan</b>
+                        <br>
+                        <a href="https://www.facebook.com/saurabhranjan1806" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/m-waris-653ba028/" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/shivani.jpg" class="img-responsive circle">
+                        <b>Shivani Tekriwal</b>
+                        <br>
+                        <a href="https://www.facebook.com/shivani.tekriwal" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/shivani-tekriwal-6a2a2b122/" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/shlok.jpg" class="img-responsive circle">
+                        <b>Shlok Srivastava</b>
+                        <br>
+                        <a href="https://www.facebook.com/shlok.srivastava" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/shlok-srivastava-86654010a/" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <center>
+                        <img src="team/waris.jpg" class="img-responsive circle">
+                        <b>M Waris</b>
+                        <br>
+                        <a href="https://www.facebook.com/mw.waris1" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/in/m-waris-653ba028/" class="fa fa-linkedin"></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <!-- About Us elements end -->
+        <!-- added maps above the footer -->
+
+        <a name="contact"></a>
+        <footer class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="https://www.facebook.com/ecell.jssaten/" target="_blank" class="fa fa-facebook" title="Facebook"></a>
+                    <a href="https://www.linkedin.com/in/srivastavs61/" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a>
+                    <a href="https://www.youtube.com/channel/UC2cL8l0aPdqL7ONVCx9ReEQ" target="_blank" class="fa fa-youtube" title="YouTube"></a>
+                </div>
+            </div>
+
+        </footer>
+        <div class="copyright container-fluid text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2017 All Rights Reserved | Handcrafted with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by EDC</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#fakeloader").fakeLoader({
+            timeToHide: 1200,
+            zIndex: "999",
+            spinner: "spinner5",
+            bgColor: "#222222"
+        });
+
+    </script>
+</body>
+
 </html>
