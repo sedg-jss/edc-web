@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/landing-page.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="media/icon.png">
     <link rel="stylesheet" href="css/fakeLoader.css">
     <script src="js/fakeLoader.min.js"></script>
 
@@ -76,12 +76,34 @@
             font-size: 1.4em;
         }
         
+        .btn:hover {
+            color: #5e4485;
+            background: #fff;
+        }
+        
         #button-caro {
             transform: translateY(110%);
         }
         
         #button-caro2 {
             transform: translateY(110%);
+            color: #fff;
+            background: #5e4485;
+        }
+        
+        #button-caro2 a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        #button-caro2:hover {
+            color: #5e4485;
+            background: #fff;
+        }
+        
+        #button-caro2 a:hover {
+            text-decoration: none;
+            color: #5e4485;
         }
         
         #divrule {
@@ -99,6 +121,10 @@
             display: none;
         }
         
+        #collabdiv {
+            display: none;
+        }
+        
         @media(max-width: 480px) {
             #headidea {
                 display: none;
@@ -108,7 +134,7 @@
             }
             #collabtext {
                 display: block;
-                transform: translateX(5%);
+                transform: translateX(+06%);
             }
             #demo {
                 display: none;
@@ -127,6 +153,12 @@
             #stepimage {
                 transform: translateX(0%);
             }
+            #collabdiv {
+                display: block;
+            }
+            #collabdivpc {
+                display: none;
+            }
         }
         
         #icon {
@@ -141,126 +173,13 @@
             display: none;
         }
     }
-<<<<<<< HEAD
 
-=======
-    .carousel-caption{
-    top: 45%;
-    transform: translateY(-30%);
-  }
-  hr{
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0; 
-  }
-    p{  
-        font-size: 1.3em;
-    }
-    h1{
-        font-size: 4.3em;
-        color:#ffffff;
-    }
-    #about{
-        display: none;
-    }
-    #divrule{
-        padding-bottom: 20px;
-    }
-    #social-links{
-        top: 85%;
-        transform: translateY(-10%);
-        transform: translateX(0%);
-    }
-    #demo{
-        font-size: 3.3em;
-        color: #ffffff;
-    }
-    .btn{
-    color: white;
-    padding: 12px 22px;
-    background-color: #5e4485;
-    border: 10px;
-    top: 40px;
-    font-size: 1.4em;
-  }
-  #button-caro{
-    transform: translateY(110%);
-  }
-    #button-caro2{
-    transform: translateY(110%);
-  }
-  #divrule{
-    padding-bottom: 70px;
-  }
- #li2{
-    margin: 20px 0;
-    font-size: 1.3em;
-    text-align: center;
-    font-weight: bold;
-  }
-  #collabtext{
-    display: none;
-  }
-  #collabdiv{
-    display: none;
-  }
-
-    @media(max-width: 480px){
-    #headidea{
-        display: none;
-    }
-    #headhr{
-        display: none;
-    }
-    #collabtext{
-        display: block;
-        transform: translateX(+06%);
-    }
-    #demo{
-        display: none;
-    }
-    #button-caro{
-        display: none;
-    }
-    #button-caro2{
-        transform: translateY(-1%);
-        transform: translateX(-19%);
-        background-color: #000000;
-    }
-    #stepcollab{
-        display: block;
-    }
-    #stepimage{
-        transform: translateX(0%);
-    }
-    #collabdiv{
-        display: block;
-    }
-    #collabdivpc{
-        display: none;
-    }
-    }
-    
-    #icon{
-        max-width: 150px;
-    }
-    h2{
-        font-size: 1.9em;
-    }
-    #about{
-        display: none;
-    }
-  }
->>>>>>> 8983840886b4929d927322e378d1eb8d7c38f37f
     </style>
 </head>
 
 
 
-<body>
+<body id="body">
     <div id="fakeloader"></div>
     <!--navbar starts here -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -272,7 +191,7 @@
                     <span class="icon-bar"></span>
                     </button>
 
-                <a class="navbar-brand" href="#"><img src="media/logo.png" id="navlogo" class="img-responsive"></a>
+                <a class="navbar-brand" href="#body"><img src="media/logo.png" id="navlogo" class="img-responsive"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <!--this is the collapse bar for navbar -->
@@ -293,7 +212,6 @@
             </div>
         </div>
     </nav>
-<<<<<<< HEAD
     <div id="carousel" class="section carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <div class="item active">
@@ -301,73 +219,36 @@
                 <div class="carousel-caption">
                     <h1 id="headidea">Ideathon 2017 is live !</h1>
                     <hr id="headhr">
-                    <h3 id="headidea">In collabration with <img src="media/steplogo.ico"> JSS - STEP</h3>
+                    <h4 id="headidea" style="font-size:1.9em;">Organised by <img src="media/logo.png" style="height: 10% ; width: 10%;"> and &nbsp; &nbsp;<img src="media/steplogo.png" style="height: 5% ; width: 5%;"></h4>
                     <hr id="headhr">
                     <br>
-=======
-<div id="carousel" class="section carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="media/idethon.jpeg">
-                    <div class="carousel-caption">
-                        <h1 id="headidea">Ideathon 2017 is live !</h1>
-                        <hr id="headhr">
-                        <h4 id="headidea" style="font-size:1.9em;">Organised by <img src="media/logo.png" style="height: 10% ; width: 10%;"></img> and &nbsp &nbsp<img src="media/steplogo.png" style="height: 5% ; width: 5%;">
-                        </img> </h4>
-                        <hr id="headhr">
-                        <br>
->>>>>>> 8983840886b4929d927322e378d1eb8d7c38f37f
-
                     <p id="demo"></p>
-                    <button class="btn btn-default" id="button-caro">Prizes</button> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                    <button type="submit" class="btn btn-default" id="button-caro2"><a style="color: white" href="https://goo.gl/forms/hYVlLPrxA8gvlU4K3">Register</a></button>
+                    <button class="btn btn-default" id="button-caro">Prizes</button> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <button type="submit" class="btn btn-default" id="button-caro2"><a href="https://goo.gl/forms/hYVlLPrxA8gvlU4K3">Register</a></button>
                     <!--<div class="carousel-caption" id="social-links">
                             <a href="#" class="fa fa-facebook"></a>
                             <a href="#" class="fa fa-twitter"></a>
                             <a href="#" class="fa fa-youtube"></a>
                         </div>-->
-<<<<<<< HEAD
-                    <h4 id="collabtext">In collabration with <img src="media/steplogo.ico"> JSS - STEP</h4>
-=======
-                    </div>
->>>>>>> 8983840886b4929d927322e378d1eb8d7c38f37f
                 </div>
             </div>
-<<<<<<< HEAD
             <!-- End Active -->
-=======
-        </div>
-<div id="collabdiv" class="section container-fluid text-center about" style="background-color: #d8d8d8">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-sm-4">
-                <h2 style="font-weight: bold;">Organised By </h2>
-                <hr>
-            </div>
-            <div class="col-sm-2">
-                <img src="media/logo.png" class="img-responsive" style="transform: translateX(5%);"></img>
-            </div>
-            <div class="col-sm-2">
-                <img src="media/steplogo.png" class="img-responsive" style="height:50% ; width:50% ;transform: translateX(60%);"></img>
-            </div>
         </div>
     </div>
-</div>
-<div class="section container-fluid text-center about" style="background-color: #edeeef;" id="divrule">
-<div class="container text-center" id="therounds" >
-    <h2 id="aboutus">Ideathon 2017</h2>
-    <hr>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12" >
-            <img class="img-responsive" src="media/edc-idea.jpg">
->>>>>>> 8983840886b4929d927322e378d1eb8d7c38f37f
-        </div>
-    </div>
-    <div class="section container-fluid text-center about" style="display: none;">
+    <div id="collabdiv" class="section container-fluid text-center about" style="background-color: #d8d8d8">
         <div class="container text-center">
-            <h2 id="">In collabration with <img src="media/steplogo.ico"> JSS STEP</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2 style="font-weight: bold;">Organised By </h2>
+                    <hr>
+                </div>
+                <div class="col-sm-2">
+                    <img src="media/logo.png" class="img-responsive" style="transform: translateX(5%);">
+                </div>
+                <div class="col-sm-2">
+                    <img src="media/steplogo.png" class="img-responsive" style="height:50% ; width:50% ;transform: translateX(60%);">
+                </div>
+            </div>
         </div>
     </div>
     <div class="section container-fluid text-center about" style="background-color: #edeeef;" id="divrule">
@@ -471,6 +352,7 @@
         <div class="row">
             <div class="col-md-12">
                 <p>&copy; 2017 All Rights Reserved | Handcrafted with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by EDC</p>
+                <div id="totop"><a href="#body"><i class="fa fa-arrow-circle-up" aria-hidden="true" style="float: right; z-index: 50; position: relative; top: -50px"></i></a></div>
             </div>
         </div>
     </div>
@@ -484,7 +366,12 @@
         $("#abouti").click(function() {
             $('html, body').animate({
                 scrollTop: $("#therounds").offset().top - 100
-            }, 2000);
+            }, 500);
+        });
+        $("#totop").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#body").offset().top - 100
+            }, 500);
         });
 
     </script>
@@ -528,3 +415,6 @@
         });
 
     </script>
+</body>
+
+</html>
