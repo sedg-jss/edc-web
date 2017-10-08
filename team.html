@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/fakeLoader.css">
     <script src="js/fakeLoader.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/landing-page.css">
+    <link rel="icon" href="media/icon.png">
     <style>
         .navbar {
             margin-bottom: 0;
@@ -102,7 +103,7 @@
     </style>
 </head>
 
-<body>
+<body id="body">
     <div id="fakeloader"></div>
     <!--navbar starts here -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -381,10 +382,50 @@
             <div class="row">
                 <div class="col-md-12">
                     <p>&copy; 2017 All Rights Reserved | Handcrafted with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by EDC</p>
+                    <div id="totop"><a href="#body"><i class="fa fa-arrow-circle-up" aria-hidden="true" style="float: right; z-index: 50; position: relative; top: -50px"></i></a></div>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .not('[href="#carousel"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 500, function() {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+
+    </script>
     <script type="text/javascript">
         $("#fakeloader").fakeLoader({
             timeToHide: 1200,
