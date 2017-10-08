@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/landing-page.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <link rel="icon" href="media/logo.png">
+    <link rel="icon" href="media/icon.png">
     <link rel="stylesheet" href="css/fakeLoader.css">
     <script src="js/fakeLoader.min.js"></script>
 
@@ -28,10 +28,9 @@
         #indexdiv {
             display: none;
         }
-
 </style>
 
-<body>
+<body id="body">
     <!--navbar starts here -->
     <div id="fakeloader"></div>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -43,13 +42,13 @@
 					<span class="icon-bar"></span>
 					</button>
 
-                <a class="navbar-brand" href="#"><img src="media/logo.png" width="200" id="logo" style="position: absolute; display: block; top: -60px;"></a>
+                <a class="navbar-brand" href="#"><img src="media/logo.png" id="navlogo" class="img-responsive"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <!--this is the collapse bar for navbar -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="">Home</a></li>
-                    <li><a href="#" id="about">About</a></li>
+                    <li class="active"><a href="#body">Home</a></li>
+                    <li><a href="#aboutus" id="about">About</a></li>
                     <li class="dropdown">
                         <!-- this is the code for drop-down menu -->
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
@@ -60,7 +59,7 @@
                             <li><a href="startupcharcha.html">StartUp Charcha</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" id="departments">Teams</a></li>
+                    <li><a href="#dept" id="departments">Team</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
@@ -69,28 +68,28 @@
     <!-- navbar ends here -->
     <div class="main">
         <!-- image carousel begins from here time = 11:18 pm -->
-        <div id="carousel" class="section carousel slide" data-ride="carousel">
+        <div id="carousel" class="section carousel slide" data-ride="carousel" style="margin-top:3%">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
             </ol>
             <div class="carousel-inner" role="listbox" style="background-size: 100%;">
                 <div class="item active">
-                    <img src="media/homec1.jpg">
-                    <div class="carousel-caption" style="transform: translateY(-90%);" id="indexdiv">
+                    <img src="media/home1.jpg">
+                    <!--<div class="carousel-caption" style="transform: translateY(-90%);" id="indexdiv">
                         <h1 style="font-size: 3.3em;">EAD Workshop - The First Step</h1>
                         <hr>
                         <p style="font-size: 1.6em;">The First event of E-Cell in November 2015 and which paved the path to several success in the future.
-                    </div>
+                    </div>-->
                 </div>
                 <!-- End Active -->
                 <div class="item">
-                    <img src="media/homec2.jpg">
+                    <img src="media/home2.jpg">
                 </div>
-                <div class="item">
+                <!-- <div class="item">
                     <img src="media/homec3.jpg">
-                </div>
+                </div>-->
             </div>
             <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -196,11 +195,9 @@
                     <br>
                 </div>
                 <div class="col-md-6">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-google"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
-                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="https://www.facebook.com/ecell.jssaten/" target="_blank" class="fa fa-facebook" title="Facebook"></a>
+                    <a href="https://www.linkedin.com/in/srivastavs61/" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a>
+                    <a href="https://www.youtube.com/channel/UC2cL8l0aPdqL7ONVCx9ReEQ" target="_blank" class="fa fa-youtube" title="YouTube"></a>
                 </div>
             </div>
 
@@ -209,6 +206,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p>&copy; 2017 All Rights Reserved | Handcrafted with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by EDC</p>
+                    <div id="totop"><a href="#body"><i class="fa fa-arrow-circle-up" aria-hidden="true" style="float: right; z-index: 50; position: relative; top: -50px"></i></a></div>
                 </div>
             </div>
         </div>
@@ -217,18 +215,42 @@
     <!-- Scripts to the pages -->
 
     <script type="text/javascript">
-        $("#about").click(function() {
-            $('html, body').animate({
-                scrollTop: $("#about2").offset().top - 100
-            }, 2000);
-        });
-
-        $("#departments").click(function() {
-            $('html, body').animate({
-                scrollTop: $("#departments2").offset().top - 80
-            }, 2000);
-        });
-
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .not('[href="#carousel"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 500, function() {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
     </script>
     <script type="text/javascript">
         $("#fakeloader").fakeLoader({
@@ -237,7 +259,6 @@
             spinner: "spinner5",
             bgColor: "#222222"
         });
-
     </script>
 
 
