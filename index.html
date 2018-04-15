@@ -12,6 +12,7 @@
     <!-- jquery -->
     <!-- all things are linked over the net , no local folder for js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/landing-page.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
@@ -33,7 +34,7 @@
 <body id="body">
     <!--navbar starts here -->
     <div id="fakeloader"></div>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse box-shadow navbar-fixed-top" style="font-size:1.1em; background-color:#172525;">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -47,11 +48,11 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <!--this is the collapse bar for navbar -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#body">Home</a></li>
-                    <li><a href="#aboutus" id="about">About</a></li>
+                    <li><a class="nav_link" href="#body">Home</a></li>
+                    <li><a href="#aboutus" class="nav_link" id="about">About</a></li>
                     <li class="dropdown">
                         <!-- this is the code for drop-down menu -->
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Initiatives
+                        <a class="dropdown-toggle" class="nav_link" data-toggle="dropdown" href="#">Our Initiatives
                         <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="ideathon.html">Ideathon</a></li>
@@ -59,8 +60,8 @@
                             <li><a href="startupcharcha.html">StartUp Charcha</a></li>
                         </ul>
                     </li>
-                    <li><a href="team.html" id="departments">Team</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="team.html" id="departments" class="nav_link">Team</a></li>
+                    <li><a href="#contact" class="nav_link">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -68,12 +69,12 @@
     <!-- navbar ends here -->
     <div class="main">
         <!-- image carousel begins from here time = 11:18 pm -->
-        <div id="carousel" class="section carousel slide" data-ride="carousel" style="margin-top:3%">
-            <ol class="carousel-indicators">
+        <div id="carousel" class="section carousel slide" data-ride="carousel" style="margin-top:50px;">
+            <!-- <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
-                <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
-            </ol>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol> -->
             <div class="carousel-inner" role="listbox" style="background-size: 100%;">
                 <div class="item active">
                     <img src="media/home1.jpg">
@@ -84,33 +85,33 @@
                     </div>-->
                 </div>
                 <!-- End Active -->
-                <div class="item">
+                <!-- <div class="item">
                     <img src="media/home2.jpg">
-                </div>
+                </div> -->
                 <!-- <div class="item">
                     <img src="media/homec3.jpg">
                 </div>-->
             </div>
-            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <!-- <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-            </a>
+            </a> -->
         </div>
         <!-- image carousel ensds here -->
         <!-- About Us element -->
-        <div class="section container-fluid text-center about" id="about2">
+        <a href="about"></a>
+        <div class="section container-fluid text-center about" id="about2" style="margin-bottom:0px;padding-bottom:0px;">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 id="aboutus">About Us</h2>
-                    <hr>
+                    <h2>About Us</h2>
                     <p id="aboutDesc">E-Cell, JSSATE Noida assists budding entrepreneurs by lending them a platform to materialise an ‘IDEA’ to a ‘PRODUCT’. Big time, you little wizards personify to successful businessmen upholding entrepreneurship as a career option and set a razzle-dazzle innovative exemplar. JSS E-Cell is a non-profit organisation which will act as a platform for association of likeminded students who would eventually loom as “employment creators” rather than “employment seekers”.</p>
                     <br>
                 </div>
-                <div class="row">
+                <div class="row" style="padding-bottom: 20px;">
                     <div class="col-md-5 col-md-offset-1" id="aboutpic">
                         <img src="media/work.png" class="img-responsive">
                     </div>
@@ -128,14 +129,13 @@
                 </div>
             </div>
         </div>
-        <br><br>
         <!-- About Us elements end -->
         <!-- Department -->
         <a name='teams'></a>
-        <div class="section container-fluid text-center" style="background-color:#eaebec" id="departments2">
+        <div class="section container-fluid text-center" style="background-color:#172525; margin-top:0px; padding-bottom: 50px;" id="departments2">
             <br>
             <div class="row">
-                <h2 id="dept">Departments</h2>
+            <h2 id="dept" style="color:white; font-weight: bold;">Departments</h2>
             </div>
             <br>
             <div class="row">
@@ -180,32 +180,77 @@
                     </div>
                 </div>
             </div>
-            <br><br> </div>
+        </div>
+
+        <!-- Initiatives -->
+        <div class="section container-fluid text-center" style="background-color:#EBE1BE; margin-top:0px; padding-bottom: 50px;" id="departments2">
+            <br>
+            <div class="row" style="padding-bottom: 20px;">
+            <h2 id="dept" style="color:#172525; padding-bottom: 20px;font-weight:bold;">Our Initiatives</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3 initiatives">
+                    <div class="card" style="width: 15; margin-left:9px; margin-bottom: 8px;">
+                            <div class="card-body" style="background-color: #172525; padding:8px;border: 1px; border-radius:4px;">
+                                <h5 class="card-title" style="font-weight: bold; font-size:1.2em;color:white;">StartUp Charcha</h5>
+                                <p class="card-text">A Monthly Event of E-Cell, which features speakers from various sectors of startup world.</p>
+                                <a href="#" class="btn btn-primary" style="background-color:#172525;color:#EBE1BE;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="col-md-3 initiatives">
+                    <div class="card" style="width: 15;margin-bottom: 8px; margin-left:9px;">
+                            <div class="card-body" style="background-color: #172525; padding:8px;border: 1px; border-radius:4px;">
+                                <h5 class="card-title" style="font-weight: bold; font-size:1.2em;color:white;">Confluence</h5>
+                                <p class="card-text">A Monthly Event of E-Cell, which features speakers from various sectors of startup world.</p>
+                                <a href="#" class="btn btn-primary" style="background-color:#172525;color:#EBE1BE;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="col-md-3 initiatives">
+                    <div class="card" style="width: 15; margin-bottom: 8px; margin-left:9px;border: 1px; border-radius:4px;">
+                            <div class="card-body" style="background-color: #172525; padding:8px;">
+                                <h5 style="font-weight: bold; font-size:1.2em; color:white;" class="card-title">E-Summit</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary" style="background-color:#172525;color:#EBE1BE">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-3 initiatives">
+                    <div class="card" style="width: 15; padding: 2px;">
+                            <div class="card-body" style="background-color: #172525; padding:8px;border: 1px; border-radius:4px;">
+                                <h5 class="card-title" style="font-weight: bold; font-size:1.2em;color:white;">Ideathon</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary" style="background-color:#172525; color:#EBE1BE;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+
         <!-- Department end -->
         <!-- added maps above the footer -->
-        <div>
-            <iframe width="100%" height="450" frameborder="0" style="border:0px; allowfullscreen;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJf1Y03EHlDDkRGWvWI8sn0E8&key=AIzaSyC1_A4z58bawhQ24tFAbhKFNoouQVWfRqk"></iframe>
+        <div style="background-color:#172525;">
+            <iframe width="100%" height="450" frameborder="0" style="border:4px; allowfullscreen;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJf1Y03EHlDDkRGWvWI8sn0E8&key=AIzaSyC1_A4z58bawhQ24tFAbhKFNoouQVWfRqk"></iframe>
         </div>
-        <br>
         <a name="contact"></a>
-        <footer class="container-fluid text-center">
+        <footer class="container-fluid text-center" style="margin-top: 0px;background-color:#172525;">
             <div class="row">
-                <div class="col-md-6">
-                    <h2>Prove Them Wrong!</h2>
-                    <br>
-                </div>
-                <div class="col-md-6">
-                    <a href="https://www.facebook.com/ecell.jssaten/" target="_blank" class="fa fa-facebook" title="Facebook"></a>
-                    <a href="https://www.linkedin.com/in/srivastavs61/" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a>
-                    <a href="https://www.youtube.com/channel/UC2cL8l0aPdqL7ONVCx9ReEQ" target="_blank" class="fa fa-youtube" title="YouTube"></a>
+                <div class="col-md-12">
+                    <a href="https://www.facebook.com/ecell.jssaten/" target="_blank" title="Facebook" class="socialiconsfacebook">Facebook</a>
+                    <a href="https://www.linkedin.com/in/srivastavs61/" target="_blank" class="socialiconslink">LinkedIn</a>
+                    <a href="https://www.youtube.com/channel/UC2cL8l0aPdqL7ONVCx9ReEQ" class="socialiconsyou">YouTube</a>
                 </div>
             </div>
 
         </footer>
-        <div class="copyright container-fluid text-center">
+        <div class="copyright container-fluid text-center" style="background-color: #172525;">
             <div class="row">
                 <div class="col-md-12">
-                    <p>&copy; 2017 All Rights Reserved | Handcrafted with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by EDC</p>
+                    <p>&copy; 2018 All Rights Reserved | Handcrafted with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by EDC</p>
                     <div id="totop"><a href="#body"><i class="fa fa-arrow-circle-up" aria-hidden="true" style="float: right; z-index: 50; position: relative; top: -50px"></i></a></div>
                 </div>
             </div>
@@ -261,6 +306,20 @@
         });
     </script>
 
+        <!-- <script type="text/javascript">
+                (function($) {          
+                $(document).ready(function(){
+                $(".navbar").hide();                   
+                    $(window).scroll(function(){                          
+                        if ($(this).scrollTop() > 200) {
+                            $('.navbar').fadeIn(500);
+                        } else {
+                            $('.navbar').fadeOut(500);
+                        }
+                    });
+                });
+            })(jQuery);
+        </script>      -->
 
 </body>
 

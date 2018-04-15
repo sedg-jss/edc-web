@@ -12,10 +12,42 @@
 * 	Template Style 
 *
 * ======================================================= */
-
 .carousel-caption {
     top: 45%;
     transform: translateY(-30%);
+}
+
+.socialiconsfacebook , .socialiconslink , .socialiconsyou{
+    color: white;
+    padding: 10px;
+}
+
+.socialiconsfacebook:hover{
+    color:blue;
+}
+
+.socialiconslink:hover{
+    color:skyblue;
+}
+.socialiconsyou:hover{
+    color:red;
+}
+.navlink{
+    color:blue;
+}
+
+.initiatives{
+    transition: all 0.3s;
+}
+
+.initiatives:hover{
+    transform: scale(0.9);
+    transition: 
+}
+
+.btn-primary:hover{
+    background-color:#172545;
+    border-color: #172545;
 }
 
 body {
@@ -25,6 +57,20 @@ body {
     line-height: 1.7;
     color: #828282;
     background: #fff;
+}
+
+#about2{
+    background-color: #EBE1BE;
+    margin-bottom: 0px;
+}
+
+#about2 h2{
+    margin-top: 30px;
+    font-size: 2.6em;
+}
+
+#departments2{
+    margin-top: 0px;
 }
 
 #page {
@@ -76,6 +122,8 @@ a:focus {
     text-decoration: none;
 }
 
+
+
 p {
     margin-bottom: 20px;
 }
@@ -124,6 +172,10 @@ figure {
     width: 100%;
     padding: 40px 0;
     z-index: 1001;
+}
+
+.socialicons:hover{
+    alink
 }
 
 @media screen and (max-width: 768px) {
