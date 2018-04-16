@@ -59,6 +59,10 @@ body {
     background: #fff;
 }
 
+#aboutdesc{
+    line-height:3.5;
+}
+
 #about2{
     background-color: #EBE1BE;
     margin-bottom: 0px;

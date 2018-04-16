@@ -1,3 +1,3 @@
 <h1> Edc-web </h1>
 
-This contains the code to navbar and carousel of the website .
+Contains the code for the main website of the E-cell of Jss Noida.
